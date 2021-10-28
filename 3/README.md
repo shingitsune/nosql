@@ -56,7 +56,7 @@ BulkWriteResult({
 ```js
 > db.rest.find({"type_of_food": "Japanese"}).sort({"rating": -1}).limit(2)
 ```
-```json lines
+```js
 { "_id" : ObjectId("616c5c06b65347ba3ff51be0"), "URL" : "http://www.just-eat.co.uk/restaurants-aji-tn23/menu", "address" : "23 New Rents", "address line 2" : "Ashford", "name" : "Aji - Collection Only", "outcode" : "TN23", "postcode" : "2JJ", "rating" : 6, "type_of_food" : "Japanese" }
 { "_id" : ObjectId("616c5c06b65347ba3ff51bd1"), "URL" : "http://www.just-eat.co.uk/restaurants-aisushi-n1/menu", "address" : "335 Caledonian Road", "address line 2" : "London", "name" : "Ai Sushi", "outcode" : "N1", "postcode" : "1DW", "rating" : 5, "type_of_food" : "Japanese" }
 ```
@@ -82,7 +82,7 @@ BulkWriteResult({
 ```bash
 time mongo kitsune --port 27001 --quiet --eval 'db.rest.find({"type_of_food": "Japanese"}).sort({"rating": -1}).limit(2).shellPrint()'
 ```
-```json lines
+```js
 { "_id" : ObjectId("616c820f98a5f388317b050b"), "URL" : "http://www.just-eat.co.uk/restaurants-aji-tn23/menu", "address" : "23 New Rents", "address line 2" : "Ashford", "name" : "Aji - Collection Only", "outcode" : "TN23", "postcode" : "2JJ", "rating" : 6, "type_of_food" : "Japanese" }
 { "_id" : ObjectId("616c820f98a5f388317b04fc"), "URL" : "http://www.just-eat.co.uk/restaurants-aisushi-n1/menu", "address" : "335 Caledonian Road", "address line 2" : "London", "name" : "Ai Sushi", "outcode" : "N1", "postcode" : "1DW", "rating" : 5, "type_of_food" : "Japanese" }
 
@@ -108,7 +108,7 @@ sys	0m0.017s
 ```bash
 time mongo kitsune --port 27001 --quiet --eval 'db.rest.find({"type_of_food": "Japanese"}).sort({"rating": -1}).limit(2).shellPrint()'
 ```
-```json lines
+```js
 { "_id" : ObjectId("616c820f98a5f388317b050b"), "URL" : "http://www.just-eat.co.uk/restaurants-aji-tn23/menu", "address" : "23 New Rents", "address line 2" : "Ashford", "name" : "Aji - Collection Only", "outcode" : "TN23", "postcode" : "2JJ", "rating" : 6, "type_of_food" : "Japanese" }
 { "_id" : ObjectId("616c820f98a5f388317b04fc"), "URL" : "http://www.just-eat.co.uk/restaurants-aisushi-n1/menu", "address" : "335 Caledonian Road", "address line 2" : "London", "name" : "Ai Sushi", "outcode" : "N1", "postcode" : "1DW", "rating" : 5, "type_of_food" : "Japanese" }
 
