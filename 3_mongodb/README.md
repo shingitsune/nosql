@@ -48,7 +48,7 @@ BulkWriteResult({
 ```js
 > db.rest.find({"type_of_food": "Japanese"})
 ```
-```json lines
+```js
 { "_id" : ObjectId("616c5c06b65347ba3ff51bd1"), "URL" : "http://www.just-eat.co.uk/restaurants-aisushi-n1/menu", "address" : "335 Caledonian Road", "address line 2" : "London", "name" : "Ai Sushi", "outcode" : "N1", "postcode" : "1DW", "rating" : 5, "type_of_food" : "Japanese" }
 ...
 ```
